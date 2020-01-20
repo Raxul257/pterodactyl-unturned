@@ -17,4 +17,6 @@ MODIFIED_STARTUP=$(eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g
 echo ":/home/container$ ${MODIFIED_STARTUP}"
 
 cp /start.sh ./start.sh
+chmod 777 start.sh
+
 ${MODIFIED_STARTUP}

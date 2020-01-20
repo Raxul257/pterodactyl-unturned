@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep 2
+sleep 1
 
 cd /home/container
 
@@ -8,7 +8,9 @@ cd /home/container
 curl -o Rocket.zip -L "https://github.com/RocketMod/Rocket.Unturned/releases/download/4.9.3.0/Rocket.Unturned.zip"
 unzip -o -q Rocket.zip
 rm Rocket.zip
-mv /home/container/Modules /home/container/unturned/Modules
+cp /home/container/Modules /home/container/unturned/Modules
+
+rm -r Modules/
 rm -r Scripts/
 
 MODIFIED_STARTUP=$(eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g'))

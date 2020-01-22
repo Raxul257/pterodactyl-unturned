@@ -8,4 +8,4 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`dirname $0`/Unturned_Headless_Data/Plug
 
 export TERM=xterm
 
-./Unturned_Headless.x86_64 -batchmode -nographics -NoDefaultConsole +InternetServer/unturned
+./Unturned_Headless.x86_64 -batchmode -nographics +InternetServer/unturned

@@ -15,7 +15,6 @@ ENV  HOME /home/container
 
 WORKDIR /home/container
 
-COPY ./Modules /Modules
 COPY ./start.sh /start.sh
 COPY ./entrypoint.sh /entrypoint.sh
 

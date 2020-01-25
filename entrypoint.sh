@@ -8,6 +8,9 @@ cd /home/container
 rm -r ./unturned/Modules
 cp -r /Modules ./unturned/Modules
 
+mkdir ./unturned/Servers/unturned
+ln -s ./unturned/Servers/unturned ./server
+
 cp /start.sh ./start.sh
 chmod 777 start.sh
 

@@ -5,11 +5,11 @@ cd /home/container
 
 ./steam/steamcmd.sh +@sSteamCmdForcePlatformBitness 64 +login anonymous +force_install_dir /home/container/unturned +app_update 1110390 +quit
 
-rm -r ./unturned/Modules
-cp -r /Modules ./unturned/Modules
+rm -r /home/container/unturned/Modules
+cp -r /Modules /home/container/unturned/Modules
 
-mkdir ./unturned/Servers/unturned
-ln -s ./unturned/Servers/unturned ./server
+mkdir /home/container/unturned/Servers/unturned
+ln -s /home/container/unturned/Servers/unturned /home/container/server
 
 cp /start.sh ./start.sh
 chmod 777 start.sh

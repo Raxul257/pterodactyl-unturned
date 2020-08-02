@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 MAINTAINER Raxul257, <luxar.pl@outlook.com>
 
